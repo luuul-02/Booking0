@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="#fde387"
+        >
+            <TextView
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 추천 메뉴 "
+                android:textColor="#000000"
+                android:id="@+id/todayMenu"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/pngegg"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/reRollImageView"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#fcdd73"
+        >
+        <TextView
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="23dp"
+            android:id="@+id/recommendTextView"
+            android:text="매콤한 쭈꾸미 볶음"
+            />
+
+        <FrameLayout
+            android:layout_marginTop="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="550sp"
+            >
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="550sp"
+                android:id="@+id/map"
+                tools:context=".MapsActivity"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                />
+        </FrameLayout>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/pngegg_search"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/searchImageView"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fcdd73"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/btn_book"
+            android:text="예약하기"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/main_btn_design"
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#00ffffff"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/bucketButton"
+            android:text="주문내역"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/main_btn_design"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/myPageButton"
+            android:text="Mypage"
+            android:textColor="#000000"
+            android:background="@drawable/main_btn_design"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

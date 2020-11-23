@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/resbookmanage_btn_design_1"
+        android:state_pressed="false" />    //버튼이 클릭 되지 않았을 때
+    <item android:drawable="@drawable/resbookmanage_btn_design_2"
+        android:state_pressed="true" />     //버튼이 클릭 되었을 때
+</selector>

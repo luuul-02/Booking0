@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MypageActivity">
+
+    <TextView
+        android:id="@+id/resmypage_title"
+        android:background="#fde387"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:minHeight="?actionBarSize"
+        android:padding="16dp"
+        android:text="MYPAGE"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txName"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="이름: "
+            android:textSize="20dp"
+            android:layout_marginLeft="10sp"/>
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txName"
+            android:text=""
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txPhone"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="전화 번호: "
+            android:textSize="20dp"
+            android:layout_marginLeft="10sp"/>
+
+        <TextView
+            android:id="@+id/phoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txPhone"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id: "
+            android:textSize="20dp"
+            android:layout_marginLeft="10sp"/>
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txEmail"
+            android:text=""
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="포인트: "
+            android:textSize="20dp"
+            android:layout_marginLeft="10sp"/>
+
+        <TextView
+            android:id="@+id/pointTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txPoint"
+            android:text="0"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="250sp"
+        android:layout_width="match_parent"
+        android:layout_height="270sp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btResReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="식당등록"
+            android:layout_above="@id/btHistory"
+            android:textSize="20dp"
+            android:background="@drawable/main_btn_design"
+            android:layout_marginBottom="5sp"/>
+
+        <Button
+            android:id="@+id/btResPayReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="결제방법 변경"
+            android:layout_above="@id/btHistory"
+            android:textSize="20dp"
+            android:background="@drawable/main_btn_design"
+            android:layout_marginBottom="5sp"/>
+
+        <Button
+            android:id="@+id/btHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="주문내역"
+            android:layout_alignParentBottom="true"
+            android:textSize="20dp"
+            android:background="@drawable/main_btn_design"
+            android:layout_marginBottom="5sp"/>
+
+        <Button
+            android:id="@+id/btManage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btResReg"
+            android:visibility="invisible"
+            android:text="식당관리"
+            android:textSize="20dp"
+            android:background="@drawable/main_btn_design"
+            android:layout_marginBottom="5sp"/>
+
+        <Button
+            android:id="@+id/btResBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="예약관리"
+            android:layout_above="@id/btHistory"
+            android:textSize="20dp"
+            android:background="@drawable/main_btn_design"
+            android:layout_marginBottom="5sp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

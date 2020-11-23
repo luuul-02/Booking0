@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "161698197687",
+    "firebase_url": "https://booking0.firebaseio.com",
+    "project_id": "booking0",
+    "storage_bucket": "booking0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:161698197687:android:d4fd1646bd703e7d335d32",
+        "android_client_info": {
+          "package_name": "yu.ac.kr.booking0"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "161698197687-tebm9eb072tj59cu76sriulg343eqm7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZkxnpq4BAgCnEzhoJ51OHG5BVYVj8IOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "161698197687-tebm9eb072tj59cu76sriulg343eqm7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

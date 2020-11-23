@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUpActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/signup_title"
+                android:background="#fde387"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:minHeight="?actionBarSize"
+                android:padding="16dp"
+                android:text="회원가입"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:layout_marginBottom="10sp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="ID: "
+                android:id="@+id/txId"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txId"
+                android:id="@+id/idEditText"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="PW: "
+                android:layout_below="@id/txId"
+                android:id="@+id/txPw"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txId"
+                android:layout_toRightOf="@id/txPw"
+                android:id="@+id/pwEditText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="PW Check:  "
+                android:layout_below="@id/txPw"
+                android:id="@+id/txPwcheck"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txPwcheck"
+                android:layout_below="@id/txPw"
+                android:id="@+id/pwCheckEditText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Name: "
+                android:layout_below="@id/txPwcheck"
+                android:id="@+id/txName"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txName"
+                android:layout_below="@id/txPwcheck"
+                android:id="@+id/nameEditText"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="P/N: "
+                android:layout_below="@id/txName"
+                android:id="@+id/txPn"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/txPn"
+                android:layout_below="@id/txName"
+                android:id="@+id/pnEditText"
+                />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/pnEditText"
+            android:text="Business 계정입니다."
+            android:id="@+id/isBusiness"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpButton"
+            android:text="회원 가입"
+            android:textSize="23dp"
+            android:layout_below="@id/isBusiness"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>

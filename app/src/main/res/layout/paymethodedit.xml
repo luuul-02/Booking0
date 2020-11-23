@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/paymethodedit_title"
+        android:background="#fde387"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:minHeight="?actionBarSize"
+        android:padding="16dp"
+        android:text="결제방법 변경"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_kakao"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:background="@drawable/paymethod_btn_selector"
+                android:textStyle="bold"
+                android:text="카카오페이"/>
+
+            <Button
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_naver"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:background="@drawable/paymethod_btn_selector"
+                android:textStyle="bold"
+                android:text="네이버페이"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_card"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:background="@drawable/paymethod_btn_selector"
+                android:textStyle="bold"
+                android:text="일반카드결제"/>
+
+            <Button
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_direct"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:background="@drawable/paymethod_btn_selector"
+                android:textStyle="bold"
+                android:text="매장 결제"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

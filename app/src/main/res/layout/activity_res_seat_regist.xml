@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResSeatRegist"
+    android:orientation="vertical">
+
+    //좌석 배치도 등록 타이틀 표시 텍스트뷰
+    <TextView
+        android:id="@+id/resseatregist_title"
+        android:background="#fde387"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:minHeight="?actionBarSize"
+        android:padding="16dp"
+        android:text="좌석 배치도 등록"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/imgview_seatRegist"
+        android:src="@drawable/seat_example"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        //배치도 등록 버튼
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_seatAdd"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/resbookmanage_btn_selector"
+            android:textStyle="bold"
+            android:text="등록"/>
+
+        //배치도 수정 버튼
+        <Button
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_seatEdit"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:background="@drawable/resbookmanage_btn_selector"
+            android:textStyle="bold"
+            android:text="수정"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

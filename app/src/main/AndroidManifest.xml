@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="yu.ac.kr.booking0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BOOKING"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HistoryActivity"></activity>
+        <activity android:name=".searchActivity" />
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".RestaurantRegisterActivity" />
+        <activity android:name=".RestaurantActivity" />
+        <activity android:name=".MypageActivity" />
+        <activity android:name=".ResManage.RestaurantManageActivity" />
+        <activity android:name=".ResBookRegist"/>
+        <activity android:name=".ManageActivity" />
+        <activity android:name=".ResBookInfo"/>
+        <activity android:name=".ResSeatRegist"/>
+        <activity android:name=".ResManage.PaymethodEditActivity"/>
+        <activity android:name=".LoginActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCxp9Z5-4VlmVF57l4T6RGMfqGqIoCoViE" />
+
+        <activity android:name=".signUpActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

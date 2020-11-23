@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    //버튼 백그라운드 색
+    <solid
+        android:color="@color/login_btn_black"/>
+
+    //버튼 백그라운드 선 휘는각도
+    <corners
+        android:radius="40sp"/>
+
+</shape>
